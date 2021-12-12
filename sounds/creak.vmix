@@ -1,0 +1,165 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	dsp_presets = [  ]
+	dsp_preview = null
+	Graphs = 
+	[
+		{
+			m_nGraphOutputChannels = -1
+			Name = "main"
+			m_nNodesCreated = 
+			[
+				1, 2, 0, 1,
+				1, 0, 1, 0,
+				0, 0, 1, 1,
+				0, 0, 1, 1,
+				0, 2, 0, 0,
+				1, 0, 1, 1,
+				1, 0,
+			]
+			m_EditorNodes = 
+			[
+				{
+					name = "audio.Output1"
+					friendlyname = "audio.Output1"
+					type = "audio.Output"
+					editor_pos = [ 368.0, 136.0 ]
+					editor_size = [ 140.0, 120.0 ]
+					properties = 
+					{
+						_class = "CMixOutput"
+						m_Comment = ""
+						m_name = "audio.Output1"
+						m_flVolume1 = 1.0
+						m_flVolume2 = 1.0
+						m_sendTo = ""
+					}
+				},
+				{
+					name = "audio.Track1"
+					friendlyname = "audio.Track1"
+					type = "audio.Track"
+					editor_pos = [ -296.0, 232.0 ]
+					editor_size = [ 140.0, 75.0 ]
+					properties = 
+					{
+						_class = "CMixSubmixTrack"
+						m_Comment = ""
+						m_trackName = "audio.Track1"
+						m_nChannels = -1
+						m_nMixDownRule = 0
+						m_sendOperator = "SendAllVoices"
+						m_Send1 = ""
+						m_Send2 = ""
+						m_Send3 = ""
+						m_Send4 = ""
+					}
+				},
+			]
+			m_EditorEdges = 
+			[
+				{
+					plug0 = "audio.Track1/audio:Source"
+					plug1 = "audio.Output1/audio:In1"
+				},
+			]
+			m_EditorState = 
+			{
+				XAxis = 
+				{
+					pos = 0.0
+					min = -99449.0
+					max = 99380.0
+					scale = 1.0
+				}
+				YAxis = 
+				{
+					pos = 0.0
+					min = -100050.0
+					max = 99489.0
+					scale = 1.0
+				}
+			}
+			m_Submixes = 
+			[
+				{
+					name = "audio.Track1"
+					sendOperator = "SendAllVoices"
+					soloname = 4275089042
+					channels = -1
+					mixDownRule = 0
+				},
+			]
+			m_MixCommands = 
+			[
+				{
+					command = "submix.debug"
+					paramName = -19878254
+					outputSubmix = -1
+					inputSubmix0 = 0
+					inputSubmix1 = -1
+					processor = -1
+					inputValue0 = -1
+					inputValue1 = -1
+				},
+				{
+					command = "submix.meter"
+					paramName = 0
+					outputSubmix = -1
+					inputSubmix0 = 0
+					inputSubmix1 = -1
+					processor = -1
+					inputValue0 = 0
+					inputValue1 = -1
+				},
+				{
+					command = "submix.output"
+					paramName = 0
+					outputSubmix = -1
+					inputSubmix0 = 0
+					inputSubmix1 = -1
+					processor = -1
+					inputValue0 = 0
+					inputValue1 = -1
+				},
+				{
+					command = "submix.meter"
+					paramName = 0
+					outputSubmix = -1
+					inputSubmix0 = 0
+					inputSubmix1 = -1
+					processor = -1
+					inputValue0 = 1
+					inputValue1 = -1
+				},
+			]
+			m_values = [ 1.0 ]
+			m_audioMeters = 
+			[
+				{
+					name = "audio.Track1"
+				},
+				{
+					name = "audio.Output1"
+				},
+			]
+			m_EditorPreview = 
+			{
+				volume = 1.0
+				mix = 1.0
+				voiceList = 
+				[
+					{
+						sound = "sounds/creak.vsnd"
+						track = "audio.Track1"
+						isEvent = false
+					},
+				]
+			}
+		},
+	]
+	Editor = 
+	{
+		SelectedGraph = 0
+	}
+}
